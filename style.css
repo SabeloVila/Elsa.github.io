@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+body , html {
+  margin: 0;
+  padding: 0;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+footer , header , nav , li , div , ul , body , h5, h1 , h2 , h3 , h6 , h4 {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.content{
+      background-image: url(pexels-photo-301614.jpg);
+      background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      background-position: center;
+
+}
+.bg {
+  width: auto;
+  min-height: 100vh;
+  background-color: #093346;
+  animation: gradient 20s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+@keyframes gradient {
+  0% {
+    background-color: #093346;
+  }
+
+  20% {
+    background-color: #004f52;
+  }
+
+  40% {
+    background-color: #3a4b52;
+  }
+
+  60% {
+    background-color: #353535;
+  }
+
+  80% {
+    background-color: #5a4330;
+  }
+
+  100% {
+    background-color: #093346;
+  }
+}
+
+h1 {
+  font-family: "raleway", arial;
+  font-weight: lighter;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  padding-top: 250px;
+  display: none;
+}
+h1:first-of-type {
+    display: block;
+}
+
+h2 {
+  font-family: "raleway", arial;
+  font-weight: lighter;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  padding-top: 250px;
+  display: none;
+}
+
+#button {
+  width: 150px;
+  border: 0.5px solid white;
+  border-right: none;
+  border-left: none;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#button a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "century gothic", arial;
+  font-size: 10px;
+  font-weight: lighter;
+  color: white;
+}
+
+#button:hover {
+  padding: 5px;
+}
+.namefield{
+      text-align: center;
+      margin: 50px auto;
+      display: none;
+}
+.name-input{
+       width: 400px;
+       height: 30px;
+       border-radius: 5px;
+       border: 0.5px solid white;
+       padding-left: 30px;
+       background-color: transparent;
+       font-size: 10px;
+       color: white;
+       outline: none;
+}
+
+/* media Queries */
+
+@media screen and (max-width: 850px)  {
+        .welcome{
+              display: none;
+        }
+
+        #button {
+          width: 150px;
+          border: 0.5px solid white;
+          border-right: none;
+          border-left: none;
+          margin: 100px auto 0 auto;
+          text-align: center;
+          transition: all 0.3s ease-in-out;
+          display: none;
+        }
+
+        h2 {
+          font-family: "raleway", arial;
+          font-weight: lighter;
+          font-size: 30px;
+          text-align: center;
+          color: white;
+          padding-top: 250px;
+          display: block;
+        }
+}
